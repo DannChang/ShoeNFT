@@ -13,7 +13,6 @@ const Page = ({ title }) => {
   return (
     <>
       <Box r3f route='/box' />
-      {/* Step 5 - delete Instructions components */}
       <Instructions />
     </>
   )
@@ -24,7 +23,7 @@ export default Page
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Index',
+      title: 'Not Box',
     },
   }
 }

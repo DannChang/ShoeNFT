@@ -1,2 +1,2 @@
 # ShoeNFT
-Custom shoe configurator 
+An NFT based website to sell custom shoes. 

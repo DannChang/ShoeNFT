@@ -6,6 +6,9 @@ module.exports = {
   ], // remove unused styles in production
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    colors: {
+      black: '#1E1E1E'
+    },
     extend: {},
   },
   variants: {

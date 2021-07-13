@@ -1,7 +1,7 @@
 import useStore from '@/helpers/store'
 import { A11y } from '@react-three/a11y'
 import { useFrame } from '@react-three/fiber'
-import { useRef, useState } from 'react'
+import { useRef, useState, Suspense } from 'react'
 
 const BoxComponent = ({ route }) => {
   const router = useStore((s) => s.router)
@@ -24,16 +24,21 @@ const BoxComponent = ({ route }) => {
         router.push(route)
       }}
     >
-      <mesh
-        ref={mesh}
-        onPointerOver={(event) => setHover(true)}
-        onPointerOut={(event) => setHover(false)}
-      >
-        <boxGeometry args={[1, 1, 1]} />
-        <meshBasicMaterial
-          color={hovered ? 'hotpink' : route === '/' ? 'darkgrey' : 'orange'}
-        />
-      </mesh>
+      <Suspense fallback={null}>
+      
+        <mesh
+          ref={mesh}
+          onPointerOver={(event) => setHover(true)}
+          onPointerOut={(event) => setHover(false)}
+        >
+          <boxGeometry args={[1, 1, 1]} />
+          <meshBasicMaterial
+            color={hovered ? 'hotpink' : route === '/' ? 'darkgrey' : 'orange'}
+          />
+        </mesh>
+      </Suspense>
+
+
     </A11y>
   )
 }

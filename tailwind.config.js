@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     colors: {
       black: '#1E1E1E',
-      yellow: '#FEF6E9'
+      white: '#E5E5E5',
+      yellow: '#FEF6E9',
+      purple: '#6851FF'
+
     },
     extend: {},
   },

@@ -12,14 +12,13 @@ const Box = dynamic(() => import('@/components/canvas/Box'), {
 const Page = ({ title }) => {
   useStore.setState({ title })
   return (
-    <div className="flex flex-col">
-        <Box r3f route='/box' />      
+    <div className="z-auto flex flex-col">
+        
+              
       {/* absolute w-screen max-w-full */}
-      <div className='w-full h-1/2 px-16 py-16'
+      <div className='z-0 w-screen h-1/2 px-16 py-16 bg-black'
           style={{
-            backgroundColor: 'rgb(30, 30, 30, 1)',
-            maxWidth: '1440px',
-            maxHeight: '416px'
+            maxWidth: '3840px'
           }}
       >
         <Image 
@@ -36,10 +35,8 @@ const Page = ({ title }) => {
           eth='1.2'
         />
 
-
-
       </div>
-
+      <Box className="z-30" r3f route='/box' />
       {/* <div className="object-none object-bottom">
         <Image
            
@@ -49,7 +46,11 @@ const Page = ({ title }) => {
           height={650}
         />
       </div> */}
-      <div className="w-full h-1/2 py-10 bg-white ">
+      <div className="z-10 w-screen h-1/2 py-10 bg-white "
+        style={{
+          maxWidth: '3840px'
+        }}
+      >
         <Buttons />
       </div>
       

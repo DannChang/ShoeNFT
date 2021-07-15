@@ -2,7 +2,7 @@ import React from 'react'
 
 const Artpiece = ({ name, artist, usd, eth }) => {
     return (
-        <div className="sm:ml-48 my-16 ">
+        <div className="my-16 sm:ml-48">
           <div className='text-3xl text-yellow'>
             {name}
             <div className='text-sm'>

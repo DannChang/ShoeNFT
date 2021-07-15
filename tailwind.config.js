@@ -13,7 +13,11 @@ module.exports = {
       purple: '#6851FF'
 
     },
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1600px', 
+      },
+    },
   },
   variants: {
     extend: {},

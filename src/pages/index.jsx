@@ -33,7 +33,7 @@ const Page = ({ title }) => {
         />
 
       </div>
-      <Box className="z-30" r3f route='/shoe' />
+      {/* <Box className="z-30" r3f route='/shoe' /> */}
       {/* <div className="object-none object-bottom">
         <Image
            

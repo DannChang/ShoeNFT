@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     colors: {
       black: '#1E1E1E',
+      gray: '#646462',
       white: '#E5E5E5',
       yellow: '#FEF6E9',
-      purple: '#6851FF'
-
+      purple: '#6851FF',
     },
     extend: {
       screens: {

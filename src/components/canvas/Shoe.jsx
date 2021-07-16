@@ -1,20 +1,11 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
-import { GLTFLoader } from 'three-stdlib'
+
 
 
 export default function Model(props) {
-
-  const dracoLoader = new DRACOLoader()
-  dracoLoader.setDecoderPath('/draco/gltf')
-
-  const gltfLoader = new GLTFLoader()
-  gltfLoader.setDRACOLoader(dracoLoader)
-
   const { nodes, materials } = useGLTF('/3DSneakerSMALLFILESIZE.glb')
-
   const group = useRef()
   useFrame(() => (group.current.rotation.y += 0.0))
 

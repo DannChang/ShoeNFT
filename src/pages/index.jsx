@@ -3,6 +3,8 @@ import Buttons from '@/components/Buttons'
 import useStore from '@/helpers/store'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
 
 
 const Box = dynamic(() => import('@/components/canvas/Box'), {

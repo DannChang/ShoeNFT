@@ -1,14 +1,22 @@
 import Instructions from '@/components/dom/instructions'
 import dynamic from 'next/dynamic'
+// import Shoe from '@/components/canvas/Shoe'
+import { Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
 
-const Shoe = dynamic(() => import('@/components/canvas/Shoe'), {
+const Shoe = dynamic(() => import('@/components/canvas/ShoeOne'), {
   ssr: false,
 })
 
 const Page = () => {
   return (
     <>
-      <Shoe r3f route='/' />
+        <Canvas>
+            <ambientLight intensity={0.7}/>
+            <Suspense fallback={null}>
+                <Shoe r3f/>
+            </Suspense>
+        </Canvas>
       <Instructions />
     </>
   )

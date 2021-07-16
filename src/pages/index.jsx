@@ -13,9 +13,6 @@ const Page = ({ title }) => {
   useStore.setState({ title })
   return (
     <div className="z-auto flex flex-col">
-        
-              
-      {/* absolute w-screen max-w-full */}
       <div className='z-0 w-screen h-1/2 px-16 py-16 bg-black'
           style={{
             maxWidth: '3840px'

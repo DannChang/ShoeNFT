@@ -12,7 +12,7 @@ export default function Model(props) {
         ref={group} {...props} 
         dispose={null} 
         scale={[20, 20, 20]}
-        position={[0, -1.5, -1]}
+        position={[0, -1.5, -3]}
     >
       <mesh
         castShadow

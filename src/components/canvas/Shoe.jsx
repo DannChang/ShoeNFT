@@ -7,7 +7,7 @@ import { useFrame } from '@react-three/fiber'
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/3DSneakerSMALLFILESIZE.glb')
   const group = useRef()
-  useFrame(() => (group.current.rotation.y += 0.0))
+  useFrame(() => (group.current.rotation.y += 0.012))
 
   return (
     <group 
@@ -15,6 +15,7 @@ export default function Model(props) {
         dispose={null}
         scale={[20, 20, 20]}
         position={[0, -1.5, 0]}
+        rotation={[0, Math.PI / 2, 0]}
     >
       <mesh
         castShadow

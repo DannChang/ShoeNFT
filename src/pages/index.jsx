@@ -29,38 +29,50 @@ const Page = ({ title }) => {
           width={25}
           height={25}
         />
+        <div className='flex justify-between'>
+          <div>
+            <Artpiece 
+              name='Hardy' 
+              artist='Corrina Kopf' 
+              usd='4,712'
+              eth='1.2'
+            />
+          </div>
+          <div className="mb-12">
+            <NavMenu eth='2.03'/>
+          </div>
+        </div>
 
-        <Artpiece 
-          name='Hardy' 
-          artist='Corrina Kopf' 
-          usd='4,712'
-          eth='1.2'
-        />
+        <div className="flex justify-center align-middle"
+          style={{
+            position: "absolute",
+            left: "600px",
+            top: "50px"
+          }}
+        >
 
-      <NavMenu />
+            <video id="airjordans" width="350" height="50" autoPlay>
+                <source src="/Vertical Social Levitate.mp4" type="video/mp4">
+                </source>
+            </video>
+        </div>
+
+
       </div>
-      {/* <Box className="z-30" r3f route='/shoe' /> */}
-      {/* <div className="object-none object-bottom">
-        <Image
-           
-          src="/img/levitator.png"
-          alt="levitator"
-          width={650}
-          height={650}
-        />
-      </div> */}
-      {/* <div className="z-10 w-screen h-1/2 py-10 bg-white "
+
+
+      <div className="z-10 w-screen h-1/2 py-10 bg-white "
         style={{
           maxWidth: '3840px'
         }}
       >
         <Buttons />
+
+
+
+
       </div>
-       */}
-
-
-
-    
+      
 
 
 

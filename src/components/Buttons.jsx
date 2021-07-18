@@ -24,12 +24,17 @@ const Buttons = () => {
             </svg>
 
             <Link href='/'>
+                
               <a>Share</a>
             </Link>
           </button>
         </div>
           <div className="mt-2">
-            <button className="bg-black text-yellow py-1 px-4 rounded">
+            <button className="flex bg-black text-yellow py-1 px-2 rounded">
+                <svg className="mr-2 my-1" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M10.0513 0C12.4131 0 14 1.65786 14 4.12512V9.87488C14 12.3421 12.4131 14 10.0513 14H3.94865C1.58688 14 0 12.3421 0 9.87488V4.12512C0 1.65786 1.58688 0 3.94865 0H10.0513ZM10.0513 0.976744H3.94865C2.14363 0.976744 0.976744 2.212 0.976744 4.12512V9.87488C0.976744 11.788 2.14363 13.0233 3.94865 13.0233H10.0513C11.857 13.0233 13.0233 11.788 13.0233 9.87488V4.12512C13.0233 2.212 11.857 0.976744 10.0513 0.976744Z" fill="white"/>
+                </svg>
+
               <Link href='/'>
                 <a>Transaction History</a>
               </Link>

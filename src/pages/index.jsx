@@ -51,7 +51,7 @@ const Page = ({ title }) => {
           }}
         >
 
-            <video id="airjordans" width="350" height="50" autoPlay>
+            <video id="airjordans" width="350" height="50" autoPlay="autoplay" muted loop="true">
                 <source src="/Vertical Social Levitate.mp4" type="video/mp4">
                 </source>
             </video>

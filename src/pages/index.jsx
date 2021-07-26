@@ -3,9 +3,6 @@ import Buttons from '@/components/Buttons'
 import useStore from '@/helpers/store'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import Link from 'next/link'
-import { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
 import NavMenu from '@/components/NavMenu'
 
 
@@ -50,16 +47,12 @@ const Page = ({ title }) => {
             top: "50px"
           }}
         >
-
             <video id="airjordans" width="350" height="50" autoPlay="autoplay" muted loop="true">
                 <source src="/Vertical Social Levitate.mp4" type="video/mp4">
                 </source>
             </video>
         </div>
-
-
       </div>
-
 
       <div className="z-10 w-screen h-1/2 py-10 bg-white "
         style={{
@@ -67,15 +60,7 @@ const Page = ({ title }) => {
         }}
       >
         <Buttons />
-
-
-
-
       </div>
-      
-
-
-
     </div>
 
     

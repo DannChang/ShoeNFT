@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+// import filePath from "public/3DSneakerSMALLFILESIZE.glbrm -rf node_modules"
 
 
 
